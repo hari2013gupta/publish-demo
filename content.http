@@ -1,0 +1,36 @@
+//find all content
+GET http://localhost:8080/api/content/findAll
+Content-Type: application/json
+
+//CREATE NEW content
+POST http://localhost:8080/api/content/save
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title":"My SECOND post!",
+    "desc":"My SECOND posting",
+    "status":"IDEA",
+    "contentType":"ARTICLE",
+    "createdAt":"2023-02-04T21:25:02.40000",
+    "updatedAt": null,
+    "url":"",
+}
+
+//UPDATE existing content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title":"My first post!",
+    "desc":"My first posting",
+    "status":"IDEA",
+    "contentType":"ARTICLE",
+    "createdAt":"2023-02-04T20:25:02.80000",
+    "updatedAt":"2023-02-04T22:25:02.80000",
+    "url":"http://localhost:8080/my-first-blog-post",
+}
+
+//find all content
+GET http://localhost:8080/api/content/findAll
